@@ -15,13 +15,8 @@ PhysioCare DB - Digital Flow Management System
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Arquitectura del Sistema](#arquitectura-del-sistema)
 - [Estructura de la Base de Datos](#estructura-de-la-base-de-datos)
-- [Instalación y Configuración](#instalación-y-configuración)
-- [Guía de Uso](#guía-de-uso)
 - [API Endpoints](#api-endpoints)
 - [Demostración en Vivo](#demostración-en-vivo)
-- [Roadmap](#roadmap)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 
 
