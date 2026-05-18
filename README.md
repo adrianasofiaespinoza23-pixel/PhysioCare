@@ -307,8 +307,9 @@ npm run dev
 
 ### 5. Backend
 
+```bash
 python3 app.py
-
+```
 
 ### 5. Acceder al Sistema
 
