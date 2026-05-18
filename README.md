@@ -6,7 +6,6 @@ PhysioCare DB
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-3178c6)
 ![Flask](https://img.shields.io/badge/Flask-2.3.0-000000)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479a1)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Tabla de Contenidos
 
