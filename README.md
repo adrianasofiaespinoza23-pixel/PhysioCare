@@ -124,7 +124,8 @@ PhysioCare DB ofrece:
 ### Diagrama Entidad-Relación
 
 ![Arquitectura del Sistema](./images/architecture.png)
-```
+
+---
 
 ### Relaciones del Modelo Conceptual
 
@@ -208,6 +209,8 @@ PhysioCare DB ofrece:
 
 ### Ejemplo de Uso: Crear un Plan de Tratamiento
 
+---
+
 ```bash
 # 1. Crear un plan de tratamiento
 curl -X POST http://127.0.0.1:5000/treatment_plans \
@@ -259,6 +262,7 @@ curl -X POST http://127.0.0.1:5000/billing \
     "payment_status": "Paid",
     "notes": "Payment completed"
 }'
+
 ```
 
 ---
