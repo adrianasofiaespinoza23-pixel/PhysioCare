@@ -308,6 +308,7 @@ npm run dev
 ### 5. Backend
 
 ```bash
+cd backend
 python3 app.py
 ```
 
