@@ -305,7 +305,12 @@ npm install
 npm run dev
 ```
 
-### 4. Acceder al Sistema
+### 5. Backend
+
+python3 app.py
+
+
+### 5. Acceder al Sistema
 
 - **Frontend:** http://localhost:5173
 - **Backend API:** http://localhost:5000
