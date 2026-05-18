@@ -172,17 +172,17 @@ PhysioCare DB ofrece:
                               └─────────────────┘
 ```
 
-### Relaciones Clave
+### Relaciones del Modelo Conceptual
 
-| Relación | Tipo | Descripción |
-|----------|------|-------------|
-| Patient → Appointment | 1 : N | Un paciente puede tener muchas citas |
-| Therapist → Appointment | 1 : N | Un terapeuta puede tener muchas citas |
-| Treatment Plan → Appointment | 1 : N | Un plan genera múltiples citas |
-| Appointment → Therapy Session | 1 : 1 | Una cita tiene una sesión asociada |
-| Appointment → Billing | 1 : 1 | Una cita tiene un registro de facturación |
-
----
+| # | Relación | Cardinalidad | Descripción |
+|---|----------|--------------|-------------|
+| 1 | Patient → Appointment | 1:N | Un paciente puede tener muchas citas |
+| 2 | Physiotherapist → Appointment | 1:N | Un terapeuta realiza muchas citas |
+| 3 | Patient → Treatment_Plan | 1:N | Un paciente puede tener múltiples planes |
+| 4 | Physiotherapist → Treatment_Plan | 1:N | Un terapeuta supervisa muchos planes |
+| 5 | Appointment → Therapy_Session | 1:1 | Cada cita genera una sesión |
+| 6 | Treatment_Plan → Appointment | 1:N | Un plan programa muchas citas |
+| 7 | Appointment → Billing | 1:1 | Cada cita tiene una factura |
 
 
 ##  API Endpoints
