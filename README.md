@@ -123,48 +123,7 @@ PhysioCare DB ofrece:
 
 ### Diagrama Entidad-Relación
 
-```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│    patients     │     │ physiotherapists│     │ treatment_plans │
-├─────────────────┤     ├─────────────────┤     ├─────────────────┤
-│ patient_id (PK) │◄────│ therapist_id(PK)│     │ plan_id (PK)    │
-│ first_name      │     │ first_name      │     │ patient_id (FK) │
-│ last_name       │     │ last_name       │     │ therapist_id(FK)│
-│ birth_date      │     │ specialization  │     │ diagnosis       │
-│ gender          │     │ phone_number    │     │ start_date      │
-│ phone_number    │     │ email           │     │ end_date        │
-│ email           │     │ hire_date       │     │ frequency       │
-│ address         │     │ license_no      │     │ plan_status     │
-└────────┬────────┘     │ active          │     └────────┬────────┘
-         │              └────────┬────────┘              │
-         │                       │                       │
-         │              ┌────────▼────────┐              │
-         │              │  appointments   │              │
-         │              ├─────────────────┤              │
-         └─────────────►│ appointment_id(PK)│◄─────────────┘
-                        │ patient_id (FK)  │
-                        │ therapist_id (FK)│
-                        │ plan_id (FK)     │
-                        │ app_date         │
-                        │ app_time         │
-                        │ app_status       │
-                        │ notes            │
-                        └────────┬────────┘
-                                 │
-                    ┌────────────┼────────────┐
-                    │            │            │
-                    ▼            ▼            ▼
-         ┌─────────────────┐  ┌─────────────────┐
-         │ therapy_sessions│  │    billings     │
-         ├─────────────────┤  ├─────────────────┤
-         │ session_id (PK) │  │ billing_id (PK) │
-         │ appointment_id(FK)│ │ appointment_id(FK)│
-         │ session_date    │  │ amount          │
-         │ techniques      │  │ payment_date    │
-         │ pain_level      │  │ method          │
-         │ progress_notes  │  │ payment_status  │
-         └─────────────────┘  │ notes           │
-                              └─────────────────┘
+![Arquitectura del Sistema](./images/architecture.png)
 ```
 
 ### Relaciones del Modelo Conceptual
