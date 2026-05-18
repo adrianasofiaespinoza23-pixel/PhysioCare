@@ -266,3 +266,54 @@ curl -X POST http://127.0.0.1:5000/billing \
 
 ---
 
+
+---
+
+```markdown
+## Instalación y Ejecución
+
+### Requisitos Previos
+- Node.js v18+
+- Python 3.10+
+- Docker
+
+### 1. Iniciar MySQL con Docker
+
+```bash
+docker run -d \
+  --name physiocare-mysql \
+  -p 3306:3306 \
+  -e MYSQL_ROOT_PASSWORD=111 \
+  -e MYSQL_DATABASE=PhysioCare \
+  mysql:8.0
+```
+
+### 2. Backend
+
+```bash
+# Crear entorno virtual
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
+
+# Instalar dependencias
+pip install flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy pymysql flask-cors
+
+# Ejecutar
+python app.py
+```
+
+### 3. Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### 4. Acceder al Sistema
+
+- **Frontend:** http://localhost:5173
+- **Backend API:** http://localhost:5000
+```
+
